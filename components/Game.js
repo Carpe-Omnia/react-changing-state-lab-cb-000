@@ -41,6 +41,7 @@ export default class Game extends React.Component {
     })
     this.state.turn == 'X' ? this.setState({turn: 'O'}) : this.setState({turn: 'X'}) ;
     this.getWinner() ;
+    console.log(`handleclick is being called by ${i}`)
   }
 
   getWinner () {

@@ -8,10 +8,10 @@ export default class Board extends React.Component {
   }
   showThing(index){
     if (this.props.board[index] === null) {
-      return(<Field handleClick={this.props.handleClick} player={null} />)
+      return(<Field handleClick={this.props.handleClick} player={null} index={index} />)
     }
     else {
-      return (<Field handleClick={this.props.handleClick} player={this.props.board[index]} />)
+      return (<Field handleClick={this.props.handleClick} player={this.props.board[index]} index={index} />)
     }
   }
 
@@ -19,21 +19,21 @@ export default class Board extends React.Component {
     const { board, onClick } = this.props;
     return (
       <div className="board" >
-        <tr>
-          {this.showThing(0)}
-          {this.showThing(1)}
-          {this.showThing(2)}
-        </tr>
-        <tr>
+        <div>
+          <Field handleClick={this.props.handleClick} player={this.props.board[0]} index={0} />
+          <Field handleClick={this.props.handleClick} player={this.props.board[1]} index={1} />
+          <Field handleClick={this.props.handleClick} player={this.props.board[2]} index={2} />
+        </div>
+        <div>
           {this.showThing(3)}
           {this.showThing(4)}
           {this.showThing(5)}
-        </tr>
-        <tr>
+        </div>
+        <div>
           {this.showThing(6)}
           {this.showThing(7)}
           {this.showThing(8)}
-        </tr>
+        </div>
       </div>
     );
   }
