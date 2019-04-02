@@ -4,9 +4,9 @@ export default class Status extends React.Component {
   render () {
     const { winner } = this.props;
     return (
-      <button className="status" >
+      <span className="status" >
         {this.props.winner}
-      </button>
+      </span>
     );
   }
 }
