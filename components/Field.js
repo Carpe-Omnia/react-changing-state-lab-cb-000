@@ -1,8 +1,9 @@
 import React from 'react';
 
 const Field = (props) => {
+  var disabled = true ;
     return (
-      <button className="field" onClick={event => props.handleClick(props.index, event) } >
+      <button className="field" disabled={disabled} onClick={event => props.handleClick(props.index, event) } >
         {props.player}
       </button>
     );
