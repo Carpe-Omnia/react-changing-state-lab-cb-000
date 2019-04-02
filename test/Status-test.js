@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 import Status from '../components/Status';
 
 describe('<Status />', function () {
-  /*
   it('should have .status class', function () {
     const wrapper = shallow(<Status />);
     expect(wrapper.hasClass('status')).toBe(true);
@@ -20,5 +19,4 @@ describe('<Status />', function () {
   it('should render "Tie" if `winner` is undefined', function () {
     expect(shallow(<Status />).text()).toBe('Tie');
   });
-  */
 });
