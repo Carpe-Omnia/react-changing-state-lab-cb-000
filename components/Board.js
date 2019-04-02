@@ -25,14 +25,14 @@ export default class Board extends React.Component {
           <Field handleClick={this.props.handleClick} player={this.props.board[2]} index={2} />
         </div>
         <div>
-          {this.showThing(3)}
-          {this.showThing(4)}
-          {this.showThing(5)}
+          <Field handleClick={this.props.handleClick} player={this.props.board[3]} index={3} />
+          <Field handleClick={this.props.handleClick} player={this.props.board[4]} index={4} />
+          <Field handleClick={this.props.handleClick} player={this.props.board[5]} index={5} />
         </div>
         <div>
-          {this.showThing(6)}
-          {this.showThing(7)}
-          {this.showThing(8)}
+          <Field handleClick={this.props.handleClick} player={this.props.board[6]} index={6} />
+          <Field handleClick={this.props.handleClick} player={this.props.board[7]} index={7} />
+          <Field handleClick={this.props.handleClick} player={this.props.board[8]} index={8} />
         </div>
       </div>
     );
