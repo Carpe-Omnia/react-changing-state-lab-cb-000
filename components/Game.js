@@ -45,11 +45,12 @@ export default class Game extends React.Component {
   }
 
   getWinner () {
+    const that = this ;
     if (winCombos.some(function(combo){
       return(
         combo.every(function(space){
           return(
-            this.state.board[space] == 'X'
+            that.state.board[space] == 'X'
           )
         })
       )
@@ -58,7 +59,7 @@ export default class Game extends React.Component {
       return(
         combo.every(function(space){
           return(
-            this.state.board[space] == 'O'
+            that.state.board[space] == 'O'
           )
         })
       )
