@@ -2,8 +2,8 @@ import React from 'react';
 
 const Field = (props) => {
     return (
-      <button className="field" onClick={event => this.props.onClick(this.props.index, event) } >
-        {this.props.player}
+      <button className="field" onClick={event => props.onClick(props.index, event) } >
+        {props.player}
       </button>
     );
 }
