@@ -54,7 +54,10 @@ export default class Game extends React.Component {
           )
         })
       )
-    })){this.setState({winner: 'X wins'})}
+    })){
+      this.setState({winner: 'X wins'}) ; 
+      alert('X wins') ;
+    }
     if (winCombos.some(function(combo){
       return(
         combo.every(function(space){
@@ -63,7 +66,10 @@ export default class Game extends React.Component {
           )
         })
       )
-    })){this.setState({winner: 'O wins'})}
+    })){
+      this.setState({winner: 'O wins'}) ; 
+      alert('O wins')
+    }
     if(this.isComplete() && this.state.winner == undefined){
       this.setState({
         winner: 'Tie'
